@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+.BrewHaus {
+    font-size: 34px;
+    font-weight: 900;
+    display: inline-block;
+    margin-left: 12px;
+    margin-top: 5px;
+
+    color: #3f3f46;
+    font-family: 'Playfair Display', serif;
+
+
+}
+
+.logo {
+    height: 40px;
+    width: 40px;
+    margin-top: 8px;
+    display: inline-block;
+    margin-left: 30px;
+    border-radius: 20px;
+
+}
+
+.header {
+    background-color: #fef3c7;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+
+}
+
+.right {
+    display: flex;
+    margin-left: 925px;
+    align-items: center;
+    column-gap: 35px;
+    font-size: 22px;
+    cursor: pointer;
+
+}
+
+.h2 {
+   position: relative;
+  height: 1600px;
+  margin-top: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  
+  
+  text-align: center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.h2::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1350px;
+    margin-top: 0px;
+    background-image: url(BrewHaus/h2\ bg.webp);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    opacity: 0.3;
+    z-index: -1;
+
+}
+
+.passion{
+    font-size: 58px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    margin-top: 300px;
+}
+
+.town{
+     font-size: 18px;
+    font-weight: 400;
+    font-family: 'Playfair Display', serif;
+}
+
+.NewMenu{
+
+  display: inline-block;
+  width: 110px;
+  height: 50px;
+ align-self: center;
+  font-size: 16px;
+  margin-top: 35px;
+  background-color: rgb(180,83,9);
+  color: white;
+  border-radius: 10px;
+  border: 0px;
+  cursor: pointer;
+
+}
+
+.Fav{
+    margin-top: 220px;
+    font-size: 38px;
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+}
+
+.button {
+    margin-top: 50px;
+    display: flex;
+    
+
+
+}
+
+.e{
+    margin-right: 100px;
+    margin-left: 250px;
+
+   
+
+}
+
+.c{
+    margin-left: 100px;
+    margin-right: 250px;
+}
+
+.e, .c, .l {
+  width: 280px;
+  height: 141px;
+  text-align: center; 
+  align-items: center;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  position: relative;         /* Important */
+  overflow: hidden;           /* Keeps ::before inside */
+  background-color: transparent; /* fallback */
+}
+
+
+.e::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('BrewHaus/e.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.c::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('BrewHaus/c.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.l::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('BrewHaus/l.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.testimonials {
+  background-color: #f3f4f6;
+  margin-top: 300px;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.review {
+  max-width: 300px;
+}
+
+.review img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.review h4 {
+  margin: 10px 0;
+}
+
+.review p {
+  font-style: italic;
+}
+
+    
+
+
+
+
+
+
+.cold,.latte,.espresso{
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 22px;
+    align-items: center;
+    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.c2,.e2,.l2{
+    color: rgb(63,63,70);
+    font-size: 15px;
+    font-family: 'Playfair Display', serif;
+}
+
+.c3,.e3,.l3{
+    margin-top: 25px;
+    color:  rgb(180,83,9);
+    font-weight: 800;
+}
+
+footer {
+  background-color: #4b2e2e;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cards, .reviews {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  nav a {
+    font-size: 14px;
+    margin-left: 15px;
+  }
+}
