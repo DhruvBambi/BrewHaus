@@ -71,7 +71,7 @@
     width: 100%;
     height: 1350px;
     margin-top: 0px;
-    background-image: url(BrewHaus/h2\ bg.webp);
+    background-image: url(e.jpg);
     background-size: cover;
     background-position: center;
     position: absolute;
@@ -159,7 +159,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('BrewHaus/e.jpg');
+  background-image: url('c.jpg');
   background-size: cover;
   background-position: center;
   opacity: 0.1;
@@ -173,7 +173,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('BrewHaus/c.jpg');
+  background-image: url('h2 bg.webp');
   background-size: cover;
   background-position: center;
   opacity: 0.1;
@@ -288,3 +288,4 @@ footer {
     margin-left: 15px;
   }
 }
+
